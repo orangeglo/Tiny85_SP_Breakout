@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 5E63CFC9
+P 6150 3900
+F 0 "#PWR04" H 6150 3650 50  0001 C CNN
+F 1 "GND" V 6155 3772 50  0000 R CNN
+F 2 "" H 6150 3900 50  0001 C CNN
+F 3 "" H 6150 3900 50  0001 C CNN
+	1    6150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5E63D42B
+P 4950 3900
+F 0 "#PWR03" H 4950 3750 50  0001 C CNN
+F 1 "VCC" V 4968 4027 50  0000 L CNN
+F 2 "" H 4950 3900 50  0001 C CNN
+F 3 "" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E63D7D6
+P 4500 4700
+F 0 "C1" H 4615 4746 50  0000 L CNN
+F 1 "0.1 uF" H 4615 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4538 4550 50  0001 C CNN
+F 3 "~" H 4500 4700 50  0001 C CNN
+	1    4500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E63F78B
+P 4500 4850
+F 0 "#PWR02" H 4500 4600 50  0001 C CNN
+F 1 "GND" H 4505 4677 50  0000 C CNN
+F 2 "" H 4500 4850 50  0001 C CNN
+F 3 "" H 4500 4850 50  0001 C CNN
+	1    4500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5E63F91E
+P 4500 4550
+F 0 "#PWR01" H 4500 4400 50  0001 C CNN
+F 1 "VCC" H 4517 4723 50  0000 C CNN
+F 2 "" H 4500 4550 50  0001 C CNN
+F 3 "" H 4500 4550 50  0001 C CNN
+	1    4500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E63FDC1
+P 4500 4550
+F 0 "#FLG01" H 4500 4625 50  0001 C CNN
+F 1 "PWR_FLAG" V 4500 4677 50  0000 L CNN
+F 2 "" H 4500 4550 50  0001 C CNN
+F 3 "~" H 4500 4550 50  0001 C CNN
+	1    4500 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E641456
+P 4500 4850
+F 0 "#FLG02" H 4500 4925 50  0001 C CNN
+F 1 "PWR_FLAG" V 4500 4978 50  0000 L CNN
+F 2 "" H 4500 4850 50  0001 C CNN
+F 3 "~" H 4500 4850 50  0001 C CNN
+	1    4500 4850
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 4850
+Connection ~ 4500 4550
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5E643487
+P 4200 3500
+F 0 "J1" H 4092 3175 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 4092 3266 50  0000 C CNN
+F 2 "Connector:2_tiny_pads" H 4200 3500 50  0001 C CNN
+F 3 "~" H 4200 3500 50  0001 C CNN
+	1    4200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5E644857
+P 6850 3400
+F 0 "J3" H 6878 3376 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6878 3285 50  0000 L CNN
+F 2 "Connector:2_tiny_pads" H 6850 3400 50  0001 C CNN
+F 3 "~" H 6850 3400 50  0001 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5E645C83
+P 5450 2500
+F 0 "J2" V 5388 2212 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 5297 2212 50  0000 R CNN
+F 2 "Connector:4_tiny_pads" H 5450 2500 50  0001 C CNN
+F 3 "~" H 5450 2500 50  0001 C CNN
+	1    5450 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3900 4950 3500
+Wire Wire Line
+	4950 3500 4400 3500
+Connection ~ 4950 3900
+Wire Wire Line
+	6150 3900 6150 3400
+Wire Wire Line
+	6150 3400 6650 3400
+Connection ~ 6150 3900
+Wire Wire Line
+	4400 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 3200
+Wire Wire Line
+	4950 3200 5450 3200
+Wire Wire Line
+	5450 3200 5450 3300
+Wire Wire Line
+	6650 3500 6550 3500
+Wire Wire Line
+	6550 3500 6550 3200
+Wire Wire Line
+	6550 3200 5550 3200
+Wire Wire Line
+	5550 3200 5550 3300
+Wire Wire Line
+	5250 3300 5250 2700
+Wire Wire Line
+	5250 2700 5350 2700
+Wire Wire Line
+	5350 3300 5350 2800
+Wire Wire Line
+	5350 2800 5450 2800
+Wire Wire Line
+	5450 2800 5450 2700
+Wire Wire Line
+	5550 2700 5550 2800
+Wire Wire Line
+	5550 2800 5650 2800
+Wire Wire Line
+	5650 2800 5650 3300
+Wire Wire Line
+	5650 2700 5750 2700
+Wire Wire Line
+	5750 2700 5750 3300
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U?
+U 1 1 5E653758
+P 5550 3900
+F 0 "U?" V 4975 3900 50  0000 C CNN
+F 1 "ATtiny85-20SU" V 4884 3900 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 5550 3900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5550 3900 50  0001 C CNN
+	1    5550 3900
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
